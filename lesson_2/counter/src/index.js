@@ -29,3 +29,4 @@ const store = createStore(CounterReducer);
 
 store.dispatch(increment());
 store.dispatch(decrement());
+export default store;
