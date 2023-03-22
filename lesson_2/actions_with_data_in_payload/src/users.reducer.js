@@ -1,5 +1,3 @@
-import { addUser, deleteUser } from './users.actions';
-
 const ADD = 'ADD';
 const DELETE = 'DELETE';
 
