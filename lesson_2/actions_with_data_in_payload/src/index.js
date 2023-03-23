@@ -10,5 +10,5 @@ store.dispatch(
 store.dispatch(deleteUser(76));
 
 store.subscribe(() => {
-  const state = store.getState();
+  console.log(store.getState());
 });

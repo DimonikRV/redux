@@ -1,6 +1,6 @@
 export const addUser = (id, name) => {
   return {
-    type: 'add',
+    type: ADD,
     payload: {
       id,
       name,
@@ -10,7 +10,7 @@ export const addUser = (id, name) => {
 
 export const deleteUser = id => {
   return {
-    type: 'delete',
+    type: DELETE,
     payload: {
       id,
     },
