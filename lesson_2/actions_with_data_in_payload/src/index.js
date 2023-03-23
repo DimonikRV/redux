@@ -12,3 +12,6 @@ store.dispatch(deleteUser(76));
 store.subscribe(() => {
   console.log(store.getState());
 });
+console.log(store.getState());
+
+console.log(2);

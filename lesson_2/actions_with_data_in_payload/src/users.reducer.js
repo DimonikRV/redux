@@ -5,9 +5,16 @@ const DELETE = 'DELETE';
 export const usersReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD:
-      return state.usersList.concat(action.payload);
+      return {
+        ...state,
+        usersList: [].concat(action.payload),
+      };
     case DELETE:
-      return state.usersList.filter(user => user.id !== action.payload.id);
+      return {
+        ...state,
+        usersList: state.usersList.filter(user => user.id !== action.payload.id),
+      };
+
     default:
       return state;
   }
