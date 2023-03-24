@@ -28,5 +28,7 @@ export const usersReducer = (state = initialState, action) => {
             : user,
         ),
       };
+    default:
+      return state;
   }
 };
