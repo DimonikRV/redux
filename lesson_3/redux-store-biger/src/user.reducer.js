@@ -7,8 +7,9 @@ export const userReducer = (state = initialState, action) => {
     case SET_USER:
       return {
         ...state,
-        ...action.payload.userData,
+        ...action.payload,
       };
+
     default:
       return state;
   }
