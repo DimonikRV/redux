@@ -1,7 +1,7 @@
 import store from './store';
 import { setLanguage } from './language.actions';
 import { addProduct, removeProduct } from './cart.actions';
-import { setUser } from './user.actions';
+import { setUser, removeUser } from './user.actions';
 
 store.dispatch(setLanguage('jp'));
 store.dispatch(
@@ -23,5 +23,6 @@ store.dispatch(
     name: 'Bob',
   }),
 );
+store.dispatch(removeUser());
 
 console.log(store.getState());
