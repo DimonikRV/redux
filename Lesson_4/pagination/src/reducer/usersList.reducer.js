@@ -3,7 +3,7 @@ import { prevPage, nextPage } from './userList.actions';
 
 const initialState = {
   usersList: users,
-  currentPage: 0,
+  currentPage: 1,
 };
 
 export const usersListReducer = (state = initialState, action) => {
