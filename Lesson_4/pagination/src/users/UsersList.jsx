@@ -22,7 +22,7 @@ const UsersList = ({ users, currentPage, goNext, goPrev }) => {
       />
       <ul className="users">
         {nextUsersList.map(user => (
-          <User {...user} />
+          <User key={user.id} {...user} />
         ))}
       </ul>
     </div>
