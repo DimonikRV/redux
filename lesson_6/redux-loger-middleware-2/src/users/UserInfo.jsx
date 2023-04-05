@@ -12,7 +12,7 @@ const UserInfo = ({ userData, isFetching }) => {
     return null;
   }
 
-  const { avatar_url, name, location } = userData.data;
+  const { avatar_url, name, location } = userData;
 
   return (
     <div className="user">
